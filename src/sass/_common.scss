@@ -1,1 +1,109 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.photo-card {
+  width: 250px;
+  height: 230px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+
+  overflow: hidden;
+
+  &__box-img {
+    height: 170px;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 170px;
+  }
+}
+
+.label {
+  position: relative;
+  border: none;
+
+  float: left;
+  align-items: center;
+
+  &__input {
+    width: 250px;
+    height: 25px;
+    padding: 8px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    float: right;
+    border: 0;
+    padding: 0;
+    top: 0;
+    right: 0px;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.search-form {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(47, 47, 236);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-more {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hide {
+  visibility: hidden;
+}
