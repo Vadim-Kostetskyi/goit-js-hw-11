@@ -1,14 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 5px;
 }
 
 .gallery {
@@ -21,8 +20,8 @@ ul {
 }
 
 .photo-card {
-  width: 250px;
-  height: 230px;
+  width: 420px;
+  height: 320px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
@@ -30,7 +29,7 @@ ul {
   overflow: hidden;
 
   &__box-img {
-    height: 170px;
+    height: 220px;
     overflow: hidden;
   }
 
@@ -38,6 +37,7 @@ ul {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 15px;
   }
 
   &__img {
@@ -54,8 +54,8 @@ ul {
   align-items: center;
 
   &__input {
-    width: 250px;
-    height: 25px;
+    width: 350px;
+    height: 35px;
     padding: 8px;
     outline: none;
     border-radius: 2px;
