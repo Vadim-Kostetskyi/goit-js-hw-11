@@ -20,11 +20,12 @@ async function getImg(imageName) {
   await imgAapi
     .fetchPhotos(imageName)
     .then(response => {
-      console.log(response.data.hits);
-      const imeges = response.data.hits;
-
-      if (imeges.length === 0) {
+      if (response.data.totalHits === 0) {
         throw new Error();
+      } else if (response.data.hits.length === 0) {
+        Notiflix.Notify.failure(
+          "We're sorry, but you've reached the end of search results."
+        );
       }
       loadButt.classList.remove('hide');
 
